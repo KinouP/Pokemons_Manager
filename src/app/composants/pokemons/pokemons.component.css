@@ -2,3 +2,90 @@
   padding-top: 30px;
   text-align: center;
 }
+
+#zoom{
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #999;
+  border:solid 1px #333A40;
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  width: 400px;
+  margin: 30%;
+  position: fixed;
+}
+
+#Cadre{
+  padding-left: 20%;
+}
+
+#PokeCasenormal {
+  background-image: linear-gradient(to bottom, #ffffff 0%, #c8ad7f  100%);
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #999;
+  border:solid 1px #333A40;
+  margin: 20px;
+  width: 30%;
+}
+
+#PokeCaseplante {
+  background-image: linear-gradient(to bottom, #00FF7F 0%, #808000 100%);
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #999;
+  border:solid 1px #333A40;
+  margin: 20px;
+  color: #ffffff;
+  width: 30%;
+}
+
+#PokeCasefeu {
+  background-image: linear-gradient(to bottom, #000000 0%, #ff0000 100%);
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #999;
+  border:solid 1px #333A40;
+  margin: 20px;
+  color: #ffffff;
+  width: 30%;
+}
+
+#PokeCaseeau {
+  background-image: linear-gradient(to bottom, #1E90FF 0%, #0000FF 100%);
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #999;
+  border:solid 1px #333A40;
+  margin: 20px;
+  color: #ffffff;
+  width: 30%;
+}
+
+#PokeCaseinsect {
+  background-image: linear-gradient(to bottom, #000000 0%, #808000 100%);
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #999;
+  border:solid 1px #333A40;
+  margin: 20px;
+  color: #ffffff;
+  width: 30%;
+}
+
+#PokeCasepoison {
+  background-image: linear-gradient(to bottom, #ff0000 0%, #800080 100%);
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #999;
+  border:solid 1px #333A40;
+  margin: 20px;
+  color: #ffffff;
+  width: 30%;
+}
+
+#PokeCasepsy {
+  background-image:linear-gradient(to bottom, #000000 0%, #800080 100%);
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #999;
+  border:solid 1px #333A40;
+  margin: 20px;
+  color: #ffffff;
+  width: 30%;
+}

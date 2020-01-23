@@ -1,23 +1,18 @@
-<div class="columns is-1 is-multiline" id="Cadre">
-  <div *ngFor="let poke of pokedex" class="column is-one-third" id="PokeCase">
-    <table>
-      <tr>
-        <td rowspan="6" valign="center"><img src="{{image}}{{poke.id}}.png" width="180px"></td>
-        <td><u>Identifiant :</u> {{poke.id}}</td>
-      </tr>
-      <tr>
-        <td colspan="2" style="font-size: 20px; font-weight: bold">{{poke.nom}}</td>
-      </tr>
-      <tr>
-        <td colspan="2">{{poke.categorie}}</td>
-      </tr>
-      <tr>
-        <td colspan="2">{{poke.type}}</td>
-      </tr>
-      <tr>
-        <td>{{poke.taille}} m</td>
-        <td>{{poke.poids}} kg</td>
-      </tr>
-    </table>
-  </div>
-</div>
+<table (click)="unClickSurPokemon()">
+  <tr>
+    <td rowspan="5" valign="center"><img src="{{image}}{{pokemon.id}}.png" width="180px" title="{{pokemon.nom}}"></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="font-size: 30px; font-weight: bold">{{pokemon.nom}}</td>
+  </tr>
+  <tr>
+    <td colspan="2">{{pokemon.categorie}}</td>
+  </tr>
+  <tr>
+    <td colspan="2">Type : {{pokemon.type}}</td>
+  </tr>
+  <tr>
+    <td>{{pokemon.taille}} m</td>
+    <td>{{pokemon.poids}} kg</td>
+  </tr>
+</table>

@@ -1,3 +1,13 @@
-<img src="src/pokedex.png" id="logo" alt="logo">
+<div id="logo"><img src="../../../assets/pokedex.png" alt="logo">
+<br><p>By Kévin PRIOL</p></div>
 
-<app-pokemon></app-pokemon>
+<div *ngIf="p" id="zoom">
+  Le Pokémon envoyé par la "fille" est {{p.nom}}.
+    <br>Il est le Pokémon n°{{p.id}}. Il est de la {{p.gen}}e génération.
+</div>
+
+<div class="columns is-1 is-multiline" id="Cadre">
+  <div *ngFor="let poke of pokedex" class="column is-one-third" id="PokeCase{{poke.type[0]}}">
+    <app-pokemon [pokemon]=poke (clickSurPokemon)="p=$event"></app-pokemon>
+  </div>
+</div>
