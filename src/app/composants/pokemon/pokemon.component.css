@@ -1,0 +1,15 @@
+#Cadre{
+  padding-left: 20%;
+}
+
+#PokeCase {
+  background-color:#C0C0C0;
+  background-image:-webkit-linear-gradient(top, #ffffff 0%, #333A40 100%);
+  background-image: linear-gradient(to bottom, #ffffff 0%, #C0C0C0 100%);
+  border-radius: 10px;
+  margin-bottom:2px;
+  box-shadow: 3px 3px 3px #999;
+  border:solid 1px #333A40;
+  margin: 20px;
+  width: 30%;
+}
