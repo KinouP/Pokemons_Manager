@@ -1,3 +1,12 @@
+<div id="menu">
+  <form #MoteurRecherche="ngForm" (ngSubmit)="envoyer(formPokemon.value)">
+    <input type="text" name="pokemon" ngModel>
+    <button type="submit">Rechercher</button>
+  </form>
+</div>
+
+<div id="result">{{MoteurRecherche.value}}</div>
+
 <div id="logo"><img src="../../../assets/pokedex.png" alt="logo">
 <br><p>By Kévin PRIOL</p></div>
 
@@ -7,7 +16,7 @@
 </div>
 
 <div class="columns is-1 is-multiline" id="Cadre">
-  <div *ngFor="let poke of pokedex" class="column is-one-third" id="PokeCase{{poke.type[0]}}">
+  <div *ngFor="let poke of pokemons" class="column is-one-third" id="PokeCase{{poke.type[0]}}">
     <app-pokemon [pokemon]=poke (clickSurPokemon)="p=$event"></app-pokemon>
   </div>
 </div>
