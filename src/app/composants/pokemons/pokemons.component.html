@@ -1,14 +1,9 @@
-<div id="menu">
-  <form #MoteurRecherche="ngForm">
-    <input type="text" name="pokeSearch" ngModel
-           (keyup)="envoyer(MoteurRecherche.value.pokeSearch)"
-           placeholder="Rechercher un Pokémon" required>
-    <button type="reset" (click)="reinitRecherche()" [disabled]="MoteurRecherche.invalid">Réinitialiser</button>
-  </form>
-</div>
-
-<div id="logo"><img src="../../../assets/pokedex.png" alt="logo">
-<br><p>By Kévin PRIOL</p></div>
+<div id="menu"><form #MoteurRecherche="ngForm">
+  <input type="text" name="pokeSearch" ngModel
+         (keyup)="envoyer(MoteurRecherche.value.pokeSearch)"
+         placeholder="Rechercher un Pokémon" required>
+  <button type="reset" (click)="reinitRecherche()" [disabled]="MoteurRecherche.invalid">Réinitialiser</button>
+</form></div>
 
 <div *ngIf="p" id="zoom">
   Le Pokémon envoyé par la "fille" est {{p.nom}}.
@@ -21,3 +16,8 @@
     <app-pokemon [pokemon]=poke (clickSurPokemon)="p=$event"></app-pokemon>
   </div>
 </div>
+
+<p>{{pokemons.results}}</p>
+<ul *ngFor="let poke of pokemons.results">
+  <li>{{poke.name}}</li>
+</ul>

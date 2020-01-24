@@ -10,6 +10,7 @@ export class PokemonComponent implements OnInit {
   @Input() pokemon;
   @Output() clickSurPokemon = new EventEmitter();
 
+
   image = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/';
 
   unClickSurPokemon(){

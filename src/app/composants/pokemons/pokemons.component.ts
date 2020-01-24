@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Pokemon} from '../../modeles/pokemon';
-import {PokemonServiceService} from '../../services/pokemon-service.service';
+import {PokemonService} from '../../services/pokemon-service';
+
 @Component({
   selector: 'app-pokemons',
   templateUrl: './pokemons.component.html',
@@ -10,7 +11,7 @@ export class PokemonsComponent implements OnInit {
   cpteur: number;
   pokemons: Array<Pokemon>;
 
-  constructor(private service: PokemonServiceService) {
+  constructor(private service: PokemonService) {
   }
 
   fcadrePokedex() {

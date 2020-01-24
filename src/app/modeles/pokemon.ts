@@ -1,3 +1,5 @@
+import {PokemonService} from '../services/pokemon-service';
+
 export class Pokemon {
   id: number;
   nom: string;

@@ -11,6 +11,8 @@ import{registerLocaleData} from '@angular/common';
 import localeFR from '@angular/common/locales/fr';
 import { PokemonComponent } from './composants/pokemon/pokemon.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { BarreDeTachesComponent } from './composants/barre-de-taches/barre-de-taches.component';
+import {HttpClientModule} from '@angular/common/http';
 registerLocaleData(localeFR);
 
 @NgModule({
@@ -18,13 +20,15 @@ registerLocaleData(localeFR);
     AppComponent,
     GenerationsComponent,
     PokemonsComponent,
-    PokemonComponent
+    PokemonComponent,
+    BarreDeTachesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [{provide: LOCALE_ID, useValue: 'fr'}],
   bootstrap: [AppComponent]
