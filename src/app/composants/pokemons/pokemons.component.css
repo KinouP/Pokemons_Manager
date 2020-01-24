@@ -1,6 +1,8 @@
 #logo{
   padding-top: 30px;
   text-align: center;
+  font-weight: bold;
+  color: #000000;
 }
 
 button{
@@ -16,6 +18,7 @@ input{
   border-radius: 6px;
   border:solid 1px #333A40;
   margin: 5px;
+  width: 250px;
 }
 
 #menu{
@@ -38,7 +41,8 @@ input{
   font-size: 16px;
   text-align: center;
   width: 400px;
-  margin: 30%;
+  margin: auto;
+  margin-left: 350px;
   position: fixed;
 }
 
@@ -46,71 +50,57 @@ input{
   padding-left: 20%;
 }
 
-#PokeCasenormal {
+.PokeCase {
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #999;
+  border:solid 1px #333A40;
+  margin: 20px;
+  width: 30%;
+}
+
+#null {
+  background-image: linear-gradient(to bottom, #ffffff 0%, #C0C0C0  100%);
+  color: #000000;
+  text-align: center;
+  font-size: 30px;
+}
+
+#normal {
   background-image: linear-gradient(to bottom, #ffffff 0%, #c8ad7f  100%);
-  border-radius: 10px;
-  box-shadow: 3px 3px 3px #999;
-  border:solid 1px #333A40;
-  margin: 20px;
-  width: 30%;
+  color: #000000;
 }
 
-#PokeCaseplante {
+#plante {
   background-image: linear-gradient(to bottom, #00FF7F 0%, #808000 100%);
-  border-radius: 10px;
-  box-shadow: 3px 3px 3px #999;
-  border:solid 1px #333A40;
-  margin: 20px;
   color: #ffffff;
-  width: 30%;
 }
 
-#PokeCasefeu {
+#feu {
   background-image: linear-gradient(to bottom, #000000 0%, #ff0000 100%);
-  border-radius: 10px;
-  box-shadow: 3px 3px 3px #999;
-  border:solid 1px #333A40;
-  margin: 20px;
   color: #ffffff;
-  width: 30%;
 }
 
-#PokeCaseeau {
+#eau {
   background-image: linear-gradient(to bottom, #1E90FF 0%, #0000FF 100%);
-  border-radius: 10px;
-  box-shadow: 3px 3px 3px #999;
-  border:solid 1px #333A40;
-  margin: 20px;
   color: #ffffff;
-  width: 30%;
 }
 
-#PokeCaseinsect {
+#insect {
   background-image: linear-gradient(to bottom, #000000 0%, #808000 100%);
-  border-radius: 10px;
-  box-shadow: 3px 3px 3px #999;
-  border:solid 1px #333A40;
-  margin: 20px;
   color: #ffffff;
-  width: 30%;
 }
 
-#PokeCasepoison {
+#poison {
   background-image: linear-gradient(to bottom, #ff0000 0%, #800080 100%);
-  border-radius: 10px;
-  box-shadow: 3px 3px 3px #999;
-  border:solid 1px #333A40;
-  margin: 20px;
   color: #ffffff;
-  width: 30%;
 }
 
-#PokeCasepsy {
+#psy {
   background-image:linear-gradient(to bottom, #000000 0%, #800080 100%);
-  border-radius: 10px;
-  box-shadow: 3px 3px 3px #999;
-  border:solid 1px #333A40;
-  margin: 20px;
   color: #ffffff;
-  width: 30%;
+}
+
+#combat {
+  background-image:linear-gradient(to bottom, #ff0000 0%, #582900 100%);
+  color: #ffffff;
 }

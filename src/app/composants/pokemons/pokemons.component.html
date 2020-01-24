@@ -1,11 +1,11 @@
 <div id="menu">
-  <form #MoteurRecherche="ngForm" (ngSubmit)="envoyer(formPokemon.value)">
-    <input type="text" name="pokemon" ngModel>
-    <button type="submit">Rechercher</button>
+  <form #MoteurRecherche="ngForm">
+    <input type="text" name="pokeSearch" ngModel
+           (keyup)="envoyer(MoteurRecherche.value.pokeSearch)"
+           placeholder="Rechercher un Pokémon" required>
+    <button type="reset" (click)="reinitRecherche()" [disabled]="MoteurRecherche.invalid">Réinitialiser</button>
   </form>
 </div>
-
-<div id="result">{{MoteurRecherche.value}}</div>
 
 <div id="logo"><img src="../../../assets/pokedex.png" alt="logo">
 <br><p>By Kévin PRIOL</p></div>
@@ -16,7 +16,8 @@
 </div>
 
 <div class="columns is-1 is-multiline" id="Cadre">
-  <div *ngFor="let poke of pokemons" class="column is-one-third" id="PokeCase{{poke.type[0]}}">
+  <div *ngIf="pokemons.length<1" class="PokeCase" id="null">Aucun pokémons trouvés</div>
+  <div *ngFor="let poke of pokemons" class="PokeCase" id="{{poke.type[0]}}">
     <app-pokemon [pokemon]=poke (clickSurPokemon)="p=$event"></app-pokemon>
   </div>
 </div>

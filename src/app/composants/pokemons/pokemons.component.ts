@@ -18,12 +18,15 @@ export class PokemonsComponent implements OnInit {
     this.cpteur = this.service.cpt();
   }
 
-
   ngOnInit() {
     this.fcadrePokedex();
   }
 
-  envoyer() {
-    return this.service.triPokemon(nom);
+  envoyer(nom) {
+    this.pokemons = this.service.triPokemon(nom);
+  }
+
+  reinitRecherche() {
+    this.pokemons = this.service.getPokemons();
   }
 }

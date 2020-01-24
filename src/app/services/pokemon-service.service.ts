@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {Pokemon} from '../modeles/pokemon';
 
 @Injectable({
@@ -21,12 +21,14 @@ export class PokemonServiceService {
     {id: 133, nom: 'Evoli', categorie: 'evolutif', type: ['normal'], taille: 0.3, poids: 6.5, gen: 1}
   ];
 
-  constructor() { }
+  constructor() {
+  }
 
   //compter le nombre de pokemon
   cpt(): number {
     return this.basePokemon.length;
   }
+
   //retrouner le tableau de pokemon
   getPokemons(): Array<Pokemon> {
     return this.basePokemon;
@@ -34,7 +36,7 @@ export class PokemonServiceService {
 
   //tri les pokemon
   triPokemon(nom) {
-    return result = this.basePokemon.filter(nom => this.basePokemon[nom] === nom);
+    const regex = new RegExp(nom, 'gi');
+    return this.basePokemon.filter(PokeTri => PokeTri.nom.match(regex));
   }
-
 }
