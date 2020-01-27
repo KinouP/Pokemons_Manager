@@ -1,0 +1,42 @@
+#logo{
+  padding-left: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+}
+
+#boutons{
+  padding-left: 300px;
+  align-items: center;
+}
+
+img{
+  height: 30px;
+}
+
+button{
+  background-image: linear-gradient(to bottom, #C0C0C0 0%, #bb0b0b 100%);
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #999;
+  border:solid 1px #333A40;
+  margin: 5px;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+input{
+  border-radius: 6px;
+  border:solid 1px #333A40;
+  margin: 5px;
+  padding-left: 3px;
+  width: 250px;
+}
+
+nav{
+  background-image: linear-gradient(to bottom, #C0C0C0 0%, #999999 100%);
+  border-radius: 0px 0px 15px 15px;
+  margin-bottom:2px;
+  box-shadow: 3px 3px 3px #999;
+  border:solid 1px #333A40;
+  text-align: left;
+}
